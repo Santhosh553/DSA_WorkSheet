@@ -6,8 +6,8 @@ public class TwoSum
     public static int[] twoSum1(int[] nums, int target) {
         for(int i=0;i<nums.length;i++){
 		    for(int j=i+1;j<nums.length;j++){
-		        if(nums[i]+nums[j]==target)
-		        return new int[] {i,j};
+		        if(nums[i]+nums[j]==target)//2+7=9
+		        return new int[] {i,j};//0,1
 		    }
 		}
 		return null;
@@ -18,11 +18,11 @@ public class TwoSum
     public static int[] twoSum2(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            int t = target - nums[i];
-            if (map.containsKey(t)) {
-                return new int[] {map.get(t), i};
+            int t = target - nums[i]; //1. 9-2=7  2. 9-7=2
+            if (map.containsKey(t)) { //1. false  2. true
+                return new int[] {map.get(t), i};  //2. 0,1
             }
-            map.put(nums[i], i);
+            map.put(nums[i], i); //1. 2,0
         }
         return null;
     }
