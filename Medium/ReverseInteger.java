@@ -21,5 +21,6 @@ public class ReverseInteger {
         Scanner sc = new Scanner(System.in);
         int n=sc.nextInt();
         System.out.println(reverse(n));
+        sc.close();
     }
 }

@@ -49,5 +49,7 @@ public class TwoSum
         display(arr1);
         display(arr2);
 
+        sc.close();
+
 	}
 }
