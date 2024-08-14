@@ -21,7 +21,7 @@ public class ValidParentheses {
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         System.out.println(isValid(s));
-        sc.close();
+        sc.close(); 
     }
 
 }
